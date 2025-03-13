@@ -1,4 +1,5 @@
 @import url("./header.css");
+@import url(./schedules.css);
 
 * {
   box-sizing: border-box;
