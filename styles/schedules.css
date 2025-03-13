@@ -15,7 +15,7 @@
       padding-block: 12px;
       border-bottom: 1px solid var(--content-tertiary);
       color: var(--content-primary);
-
+      font: var(--label-large);
       span {
         color: var(--content-secondary);
       }
@@ -28,18 +28,28 @@
       list-style-type: none;
       li {
         display: flex;
+        padding: 10px;
         justify-content: space-between;
         margin-bottom: 12px;
         border-bottom: 1px solid var(--content-tertiary);
         color: var(--content-primary);
+        strong {
+          font: var(--label-medium);
+        }
+        b {
+          font: var(--label-small);
+        }
         i {
           color: var(--content-secondary);
+          font: var(--paragraph--small);
         }
         span {
           color: var(--content-secondary);
+          font: var(--paragraph--small);
         }
         small {
           color: var(--content-tertiary);
+          font: var(--paragraph--small);
         }
       }
     }

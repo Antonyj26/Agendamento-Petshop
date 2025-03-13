@@ -33,4 +33,13 @@
   --accent-yellow-light: #f0dc02;
   --accent-orange: #f0dc02;
   --accent-orange-light: #f0dc02;
+
+  /* Variáveis compostas para estilos de texto */
+  --title: 25px / 1.28 / 700 "Inter Tight", sans-serif;
+  --paragraph-medium: 14px / 1.71 500 "Inter", sans-serif;
+  --paragraph-small: 12px / 1.33 500 "Inter", sans-serif;
+  --label-large: 16px / 1.5 700 "Inter", sans-serif;
+  --label-medium: 14px / 1.71 700 "Inter", sans-serif;
+  --label-small: 12px / 1.33 700 "Inter", sans-serif;
+  --link: 12px / 1.33 500 "Inter", sans-serif;
 }

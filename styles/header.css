@@ -33,12 +33,18 @@ body {
 
       .title {
         width: 527px;
+        height: 32px;
         h1 {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 700;
+          font-family: "Inter Tight" sans-serif;
           color: var(--content-primary);
           margin-bottom: 4px;
         }
 
         p {
+          font: var(--paragraph-medium);
           color: var(--content-secondary);
         }
       }
@@ -55,6 +61,7 @@ body {
           border-color: var(--border-primary);
           background-color: var(--background-primary);
           color: var(--content-primary);
+          font: var(--label-large);
         }
       }
     }
