@@ -44,3 +44,19 @@
   --label-small: 12px / 1.33 700 "Inter", sans-serif;
   --link: 12px / 1.33 500 "Inter", sans-serif;
 }
+
+.button-new-schedule {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    cursor: pointer;
+    width: 218px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--content-brand);
+    color: #050505;
+    text-transform: uppercase;
+    font: var(--label-large);
+  }
+}

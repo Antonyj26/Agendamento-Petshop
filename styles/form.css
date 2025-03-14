@@ -1,7 +1,117 @@
 .container-form {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  display: flex;
+  margin-top: 20px;
+  display: none;
   justify-content: center;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    background-color: #23242c;
+    padding: 40px;
+    border-radius: 12px;
+    h1 {
+      margin-bottom: 4px;
+      color: var(--content-primary);
+      font: var(title);
+    }
+    p {
+      margin-bottom: 28px;
+      color: var(--content-secondary);
+    }
+    .input {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+
+      input {
+        color: var(--content-secondary);
+        background-color: #23242c;
+        border: 1px solid var(--border-primary);
+        border-radius: 8px;
+        height: 48px;
+        padding: 12px;
+        font: var(--label-large);
+      }
+    }
+
+    .label {
+      color: var(--content-primary);
+      font: var(--label-medium);
+      margin-bottom: 4px;
+    }
+
+    .text-area {
+      display: flex;
+      flex-direction: column;
+
+      textarea {
+        border: 1px solid var(--border-primary);
+        border-radius: 8px;
+        font: var(--label-large);
+        background-color: #23242c;
+        color: var(--content-secondary);
+        width: 397px;
+        height: 83px;
+        padding-inline: 12px;
+        padding-top: 12px;
+        resize: none;
+        margin-bottom: 14px;
+      }
+    }
+
+    .date-hour {
+      display: flex;
+      gap: 16px;
+
+      .input-date {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-hour {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        color: var(--content-secondary);
+        background-color: #23242c;
+        border: 1px solid var(--border-primary);
+        border-radius: 8px;
+        height: 48px;
+        padding: 12px;
+        font: var(--label-large);
+      }
+
+      input[type="date"] {
+        width: 190.5px;
+      }
+
+      input[type="time"] {
+        width: 190.5px;
+      }
+    }
+
+    .button-submit {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: var(--content-brand);
+        color: #050505;
+        text-transform: uppercase;
+        font: var(--label-large);
+        width: 123px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 28px;
+      }
+    }
+  }
 }

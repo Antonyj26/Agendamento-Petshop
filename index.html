@@ -89,9 +89,9 @@
             </ul>
           </section>
         </aside>
+        <div class="button-new-schedule"><button>Novo agendamento</button></div>
       </main>
     </div>
-    <button class="button-new-schedule">Novo agendamento</button>
     <div class="container-form">
       <form class="form">
         <header>
@@ -128,13 +128,19 @@
             placeholder="Banho e tosa"
           ></textarea>
           <div class="date-hour">
-            <label for="date" class="label">Nome do tutor</label>
-            <input type="date" id="date" name="date" />
-            <label for="time" class="label">Nome do tutor</label>
-            <input type="time" id="time" name="time" />
+            <div class="input-date">
+              <label for="date" class="label">Data</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="input-hour">
+              <label for="time" class="label">Hora</label>
+              <input type="time" id="time" name="time" />
+            </div>
           </div>
         </div>
+        <div class="button-submit"><button type="submit">Agendar</button></div>
       </form>
     </div>
+    <script src="./scripts.js"></script>
   </body>
 </html>

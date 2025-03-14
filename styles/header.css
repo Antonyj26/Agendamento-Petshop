@@ -1,6 +1,6 @@
 body {
   background-color: var(--background-primary);
-  min-height: 100vh;
+
   margin: 0;
   padding: 0;
   width: 100vw; /* 100% da largura da viewport */
@@ -23,7 +23,7 @@ body {
     width: 871px;
     height: 768px;
     padding: 80px;
-    padding-top: 0px;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     gap: 32px;
