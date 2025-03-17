@@ -49,6 +49,7 @@
           font: var(--paragraph--small);
         }
         small {
+          cursor: pointer;
           color: var(--content-tertiary);
           font: var(--paragraph--small);
         }
