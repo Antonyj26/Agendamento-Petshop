@@ -1,3 +1,4 @@
+// Seleciona as tags HTML
 const ContainerButtonNewSchedule = document.querySelector(
   ".button-new-schedule"
 );
