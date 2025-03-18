@@ -15,7 +15,7 @@
   \*********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://mundopet/./src/main.js?");
+eval("// Seleciona as tags HTML\r\nconst ContainerButtonNewSchedule = document.querySelector(\r\n  \".button-new-schedule\"\r\n);\r\nconst buttonNewSchedule = document.querySelector(\".button-new-schedule button\");\r\nconst formDisplay = document.querySelector(\".container-form\");\r\n\r\nbuttonNewSchedule.addEventListener(\"click\", (event) => {\r\n  event.preventDefault();\r\n\r\n  if (\r\n    formDisplay.style.display === \"none\" ||\r\n    formDisplay.style.display === \"\"\r\n  ) {\r\n    formDisplay.style.display = \"flex\";\r\n    ContainerButtonNewSchedule.style.display = \"none\";\r\n  } else {\r\n    formDisplay.style.display = \"none\";\r\n    ContainerButtonNewSchedule.style.display = \"flex\";\r\n  }\r\n});\r\n\n\n//# sourceURL=webpack://mundopet/./src/main.js?");
 
 /***/ })
 
