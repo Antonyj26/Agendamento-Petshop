@@ -1,3 +1,11 @@
+"use strict";
+
+// CSS
+import "./styles/global.css";
+import "./styles/form.css";
+import "./styles/header.css";
+import "./styles/schedules.css";
+
 // Seleciona as tags HTML
 const ContainerButtonNewSchedule = document.querySelector(
   ".button-new-schedule"
