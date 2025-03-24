@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import { scheduleNew } from "../API/schedule-new";
 // Capturando os valores dos inputs
 
 const form = document.querySelector(".form");
@@ -32,5 +33,5 @@ form.onsubmit = (event) => {
     return alert("O telefone deve ter 11 dígitos (ex: 00900000000)");
   }
 
-  console.log({ tutor, pet, phone, description, date, hour });
+  scheduleNew({ tutor, pet, phone, description, date, hour });
 };
