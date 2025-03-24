@@ -26,7 +26,7 @@
             </p>
           </div>
           <div class="input">
-            <input type="date" />
+            <input type="date" class="date-day" />
           </div>
         </header>
         <aside class="schedule">
@@ -36,13 +36,13 @@
               <span>09h-12h</span>
             </header>
             <ul id="period-morning" class="period">
-              <!-- Exemplo Manhã-->
+              <!-- Exemplo Manhã
               <li>
                 <strong>09:00</strong>
                 <article><b>Thor</b> <i>Fernanda Costa</i></article>
                 <span>Vacinação</span>
                 <small>Remover agendamento</small>
-              </li>
+              </li> -->
             </ul>
           </section>
           <section class="list-schedule">
@@ -51,7 +51,7 @@
               <span>13h-18h</span>
             </header>
             <ul id="period-afternoon" class="period">
-              <!-- Exemplo Tarde -->
+              <!-- Exemplo Tarde 
               <li>
                 <strong>13:00</strong>
                 <article><b>Mel</b> <i>João Souza</i></article>
@@ -69,7 +69,7 @@
                 <article><b>Simba</b> <i>Juliana Rocha</i></article>
                 <span>Tosa Higiênica</span>
                 <small>Remover agendamento</small>
-              </li>
+              </li> -->
             </ul>
           </section>
           <section class="list-schedule">
@@ -78,13 +78,13 @@
               <span>19h-21h</span>
             </header>
             <ul id="period-night" class="period">
-              <!-- Exemplo Noite -->
+              <!-- Exemplo Noite 
               <li>
                 <strong>20:00</strong>
                 <article><b>Max</b> <i>Camila Santos</i></article>
                 <span>Limpeza de Dentes</span>
                 <small>Remover agendamento</small>
-              </li>
+              </li> -->
             </ul>
           </section>
         </aside>
@@ -104,53 +104,58 @@
             id="tutor"
             name="tutor"
             placeholder="Antony Almeida"
+            required
           />
         </div>
         <div class="input">
           <label for="pet" class="label">Nome do pet</label>
-          <input type="text" id="pet" name="pet" placeholder="Nina" />
+          <input type="text" id="pet" name="pet" placeholder="Nina" required />
         </div>
         <div class="input">
-          <label for="phone" class="label">Nome do tutor</label>
+          <label for="phone" class="label">Telefone</label>
           <input
-            type="text"
+            type="number"
             id="phone"
             name="phone"
             placeholder="(00) 0 0000-0000"
+            required
           />
         </div>
         <div class="text-area">
-          <label for="description" class="label">Nome do tutor</label>
+          <label for="description" class="label">Descrição do serviço</label>
           <textarea
             name="description"
             id="description"
             placeholder="Banho e tosa"
+            required
           ></textarea>
           <div class="date-hour">
             <div class="input-date">
               <label for="date" class="label">Data</label>
-              <input type="date" id="date" name="date" />
+              <input type="date" id="date" name="date" required />
             </div>
             <div class="input-hour">
-              <label for="time" class="label">Hora</label>
-              <select type="time" id="time" name="time">
+              <label for="hour" class="label">Hora</label>
+              <select type="time" id="hour" name="hour" required>
                 <option value="08:00">08:00</option>
                 <option value="09:00">09:00</option>
                 <option value="10:00">10:00</option>
                 <option value="11:00">11:00</option>
-                <option value="14:00">12:00</option>
-                <option value="15:00">14:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
                 <option value="15:00">15:00</option>
-                <option value="15:00">16:00</option>
-                <option value="15:00">17:00</option>
-                <option value="15:00">18:00</option>
-                <option value="15:00">19:00</option>
-                <option value="15:00">20:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
               </select>
             </div>
           </div>
         </div>
-        <div class="button-submit"><button type="submit">Agendar</button></div>
+        <div class="button-submit">
+          <button id="button-submit" type="submit">Agendar</button>
+        </div>
       </form>
     </div>
   </body>
