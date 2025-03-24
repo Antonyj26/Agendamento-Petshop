@@ -96,11 +96,18 @@
         font: var(--label-large);
       }
 
-      input[type="date"] {
+      select {
+        color: var(--content-secondary);
+        background-color: #23242c;
+        border: 1px solid var(--border-primary);
+        border-radius: 8px;
+        height: 48px;
+        padding: 12px;
+        font: var(--label-large);
         width: 190.5px;
       }
 
-      input[type="time"] {
+      input[type="date"] {
         width: 190.5px;
       }
     }
