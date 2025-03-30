@@ -15,3 +15,4 @@ import "./form/scheduleDayActual.js";
 import "./form/submit.js";
 import "./form/load.js";
 import "./form/page-load.js";
+import "./form/remove.js";

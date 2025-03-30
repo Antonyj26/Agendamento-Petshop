@@ -1,7 +1,8 @@
 import dayjs from "dayjs";
 import { scheduleNew } from "../API/schedule-new";
-// Capturando os valores dos inputs
+import { scheduleFetchByDay } from "../API/schedule-Fetch-By-Day";
 
+// Capturando os valores dos inputs
 const form = document.querySelector(".form");
 const tutorName = document.getElementById("tutor");
 const inputPet = document.getElementById("pet");
@@ -30,7 +31,7 @@ inputDate.addEventListener("change", () => {
   });
 });
 
-form.onsubmit = (event) => {
+form.onsubmit = async (event) => {
   const phone = inputPhone.value.trim();
   const description = textareaDescription.value.trim();
   const date = inputDate.value;
@@ -46,6 +47,16 @@ form.onsubmit = (event) => {
     return alert(
       "O telefone deve ter pelo menos 8 dígitos ex:(fixo: 0000000 cel: 00900000000) "
     );
+  }
+
+  const dailySchedules = await scheduleFetchByDay({ date });
+
+  const unavailableHour = dailySchedules.some(
+    (schedule) => schedule.hour === hour
+  );
+
+  if (unavailableHour) {
+    alert("Este horário já está agendado escolha outro horário");
   }
 
   scheduleNew({ tutor, pet, phone, description, date, hour });

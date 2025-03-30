@@ -17,16 +17,18 @@ export async function loadSchedules({ dailySchedules }) {
       const petName = document.createElement("b");
       const descriptionName = document.createElement("span");
       const hourTime = document.createElement("strong");
+      const remove = document.createElement("small");
 
       item.setAttribute("data-id", schedule.id);
 
       tutorName.textContent = schedule.tutor;
       petName.textContent = schedule.pet;
       descriptionName.textContent = schedule.description;
+      remove.textContent = "Remover agendamento";
 
       article.appendChild(petName);
       article.appendChild(tutorName);
-      item.append(hourTime, article, descriptionName);
+      item.append(hourTime, article, descriptionName, remove);
 
       hourTime.textContent = schedule.hour;
 

@@ -44,15 +44,6 @@
       "description": "Cortar Unhas",
       "date": "2025-03-29",
       "hour": "20:00"
-    },
-    {
-      "id": "0080",
-      "tutor": "Antony",
-      "pet": "Nina",
-      "phone": "61991278207",
-      "description": "Banho Tosa e Corta unhas",
-      "date": "2025-03-30",
-      "hour": "09:00"
     }
   ]
 }
