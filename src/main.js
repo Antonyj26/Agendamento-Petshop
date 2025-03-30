@@ -13,3 +13,5 @@ import "./styles/schedules.css";
 import "./form/newSchedule.js";
 import "./form/scheduleDayActual.js";
 import "./form/submit.js";
+import "./form/load.js";
+import "./form/page-load.js";
