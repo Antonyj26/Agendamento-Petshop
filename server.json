@@ -1,49 +1,4 @@
 {
   "schedules": [
-    {
-      "id": "3ece",
-      "tutor": "Antony",
-      "pet": "Nina",
-      "phone": "61991278207",
-      "description": "Banho",
-      "date": "2025-03-24",
-      "hour": "14:00"
-    },
-    {
-      "id": "0572",
-      "tutor": "Vitória",
-      "pet": "Floki",
-      "phone": "61984551923",
-      "description": "Banho",
-      "date": "2025-03-24",
-      "hour": "15:00"
-    },
-    {
-      "id": "643e",
-      "tutor": "Antony",
-      "pet": "Nina",
-      "phone": "61991278207",
-      "description": "Banho e tosa",
-      "date": "2025-03-29",
-      "hour": "18:00"
-    },
-    {
-      "id": "bdc7",
-      "tutor": "Vitória",
-      "pet": "floki",
-      "phone": "61984551923",
-      "description": "Aparar unhas",
-      "date": "2025-03-29",
-      "hour": "18:00"
-    },
-    {
-      "id": "9154",
-      "tutor": "Alice",
-      "pet": "Kiara",
-      "phone": "61984551923",
-      "description": "Cortar Unhas",
-      "date": "2025-03-29",
-      "hour": "20:00"
-    }
   ]
 }
